@@ -1,0 +1,338 @@
+/* google search google fonts, click on https://fonts.google.com/, click on Fonts tabs, search
+fonts by typing Anek and Pacifico
+Anek= weight: 200, 300, 400
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200;300;400&family=Pacifico&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Anek Tamil", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 0;
+}
+.slide {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background-image: url("../images/background.jpg2.jpg");
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: center center center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color:red ;*/
+  background-color: rgba(255, 254, 254, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px 66px;
+}
+.header .logo {
+  font-size: 40px;
+  float: left;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #000;
+  font-family: "pacifico", cursive;
+}
+.header .menu {
+  float: right;
+}
+.header .menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+.header .menu ul li a {
+  display: block;
+  padding: 10px;
+  color: #0c0a0a;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.slide-title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0c0a0a;
+  text-align: center;
+}
+.slide-title h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.slide-title p {
+  font-size: 20px;
+}
+/* about */
+.content {
+  padding: 50px 40px;
+  z-index: 0;
+}
+.content-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-inline-start: 35px 0;
+  text-transform: capitalize;
+}
+.content-title {
+  font-size: 48px;
+  color: #333;
+  padding: 40px 0 0 0;
+}
+.content-title .border span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #9aabcf;
+  margin: 0 10px 20px 0;
+  border-radius: 100px;
+}
+.content-desc {
+  font-size: 18px;
+  color: #393838;
+  max-width: 60%;
+  padding: 5px;
+  margin-left: 20%;
+  display: inline-block;
+  text-align: center;
+}
+.skill-section {
+  display: flex;
+  padding: 55px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-section .skill-image {
+  width: 650px;
+}
+.skill-section .skill-image img {
+  width: 100%;
+}
+.skill-section .skill-content {
+  margin-top: 30px;
+  width: 45%;
+}
+.skill-content h3.skill-title {
+  font-size: 28px;
+  color: #393838;
+  font-weight: 500;
+  float: left;
+  width: 100%;
+  text-transform: capitalize;
+}
+.skills {
+  width: 100%;
+  float: left;
+  padding-top: 15px;
+  text-transform: capitalize;
+}
+.skills i {
+  color: #393838;
+  float: left;
+  clear: both;
+}
+.skills span {
+  width: 100%;
+  height: 25px;
+  border: 1px solid #9aabcf;
+  display: inline-block;
+  margin-top: 7px;
+}
+.skills span abbr {
+  display: inline-block;
+  width: 70%;
+  height: 25px;
+  background-color: #9aabcf;
+}
+.skills.efficiency span abbr {
+  width: 85%;
+}
+.skills.effectiveness span abbr {
+  width: 65%;
+}
+.skills.constructing span abbr {
+  width: 95%;
+}
+
+/* services */
+.services {
+  background-color: #e5e9ef;
+}
+.service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #393838;
+}
+.column.col2 {
+  margin: 0 4%;
+}
+.column i.fa {
+  font-size: 40px;
+}
+.column h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  color: #9aabcf;
+}
+.column i:hover.fa {
+  color: #9aabcf;
+}
+.column h4:hover {
+  color: #0c0c0c;
+}
+.column p {
+  padding-top: 10px;
+}
+.ourteam {
+  background-color: #fafaf7;
+}
+.team {
+  padding: 20px 40px;
+}
+.employer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+.employer-images img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 40%;
+}
+.employer-detail,
+.image-left {
+  margin-left: 30px;
+}
+.employer-detail h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.employer-detail h4 {
+  color: #9aabcf;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.employer-detail p {
+  font-size: 20px;
+  text-align: justify;
+}
+.map {
+  margin: 35px 0 0 0;
+}
+.footer {
+  padding: 50px;
+}
+.footer .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .icons-container .icons i.fas {
+  font-size: 20px;
+  color: #393838;
+}
+.footer .icons-container .icons h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.footer .share {
+  text-align: center;
+  padding: 30px 0;
+}
+.footer .share a.fab {
+  color: #393838;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.footer .credit {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.footer .credit span:hover {
+  color: #393838;
+}
+
+@media (max-width: 868px) {
+  .ourteam {
+    padding: 0;
+  }
+  .employer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .employer-images img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20%;
+  }
+  .employer-detail {
+    margin-left: 0;
+  }
+  .employer-detail h3 {
+    padding: 20px 0 8px 0;
+    font-size: 15px;
+  }
+  .employer-detail p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .header .menu ul li a {
+    font-size: 14px;
+  }
+  .content-title h2 {
+    font-size: 28px;
+  }
+  .skill-section {
+    flex-direction: column;
+  }
+  .skill-section .skill-image {
+    width: 100%;
+  }
+  .skill-section .skill-content {
+    width: 100%;
+  }
+  .service {
+    flex-wrap: wrap;
+  }
+  .column {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 668px) {
+  .header .logo a {
+    font-size: 20px;
+  }
+  .footer .icons-container .icons i.fas {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .header .menu ul li a {
+    display: none;
+  }
+}
